@@ -10,5 +10,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex('incidents').where('id', 1).del();
+  return knex('incidents').where('title', 'Caso primeira Ong').del();
 };
