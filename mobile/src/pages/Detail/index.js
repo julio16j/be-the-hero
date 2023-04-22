@@ -39,23 +39,23 @@ export default function Detail() {
         </TouchableOpacity>
       </View>
       <View style={styles.incident}>
-        <Text style={[styles.incidentProperty, {marginTop: 0}]}>Ong: </Text>
-        <Text style={styles.incidentValue}>{incident.name} de {incident.city}/{incident.uf}</Text>
+        <Text style={[styles.incidentProperty, {marginTop: 0}]}>Ngo: </Text>
+        <Text style={styles.incidentValue}>{incident.name} from {incident.city}/{incident.uf}</Text>
         
-        <Text style={styles.incidentProperty}>CASO: </Text>
+        <Text style={styles.incidentProperty}>CASE: </Text>
         <Text style={styles.incidentValue}>{incident.title}</Text>
         
-        <Text style={styles.incidentProperty}>Valor: </Text>
+        <Text style={styles.incidentProperty}>Value: </Text>
         <Text style={styles.incidentValue}>
-          {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(incident.value)}
+          {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'USD'}).format(incident.value)}
         </Text>
       </View>
 
       <View style={styles.contactBox}>
-        <Text style={styles.heroTitle}>Salve o dia!</Text>
-        <Text style={styles.heroTitle}>Seja o herói desse caso!</Text>
+        <Text style={styles.heroTitle}>Save the day!</Text>
+        <Text style={styles.heroTitle}>Be the hero of this case!</Text>
 
-        <Text style={styles.heroDescription}>Entre em contato:</Text>
+        <Text style={styles.heroDescription}>Please feel free to contact us:</Text>
         <View style={styles.actions}>
           
           <TouchableOpacity style={styles.action} onPress={() => {sendWhatsapp()}}>
