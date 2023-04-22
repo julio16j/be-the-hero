@@ -28,14 +28,14 @@ export default function Longon(){
      <section className="form">
       <img src={logoImg} alt="Be The Hero"/>
       <form onSubmit={handleLongin}>
-        <h1>Faça seu logon</h1>
+        <h1>Make your login here</h1>
         
-        <input placeholder="Sua ID" value={id} onChange={e => setId(e.target.value)} />
-        <button className="button" type="submit" >Entrar</button>
+        <input placeholder="Your ID" value={id} onChange={e => setId(e.target.value)} />
+        <button className="button" type="submit" >Enter</button>
 
         <Link className = "back-link"   to="/register">
           <FiLogIn  size={16} color ="#E02041" />
-          Não tenho cadastro
+          I don't have account
         </Link>
       </form>
      </section>
